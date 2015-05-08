@@ -177,7 +177,7 @@ public class IntToEngTest {
 
 		IntToEng ite = new IntToEng();
 
-		String expected ="five thousand six hundred  seventy eight";
+		String expected ="five thousand six hundred seventy eight";
 
 		String actual = ite.translateEng(5678);
 
@@ -200,4 +200,61 @@ public class IntToEngTest {
 		assertThat(actual,is(expected));
 
 		}
+	@Test
+	public void test123456() {
+
+		
+
+		IntToEng ite = new IntToEng();
+
+		String expected ="one hundred twenty three thousand four hundred fifty six";
+
+		String actual = ite.translateEng(123456);
+
+		assertThat(actual,is(expected));
+
+		}
+	@Test
+	public void test1234567() {
+
+		
+
+		IntToEng ite = new IntToEng();
+
+		String expected ="one million two hundred thirty four thousand five hundred sixty seven";
+
+		String actual = ite.translateEng(1234567);
+
+		assertThat(actual,is(expected));
+
+		}
+	@Test
+	public void test12345678() {
+
+		
+
+		IntToEng ite = new IntToEng();
+
+		String expected ="twelve million three hundred forty five thousand six hundred seventy eight";
+
+		String actual = ite.translateEng(12345678);
+
+		assertThat(actual,is(expected));
+
+		}
+	@Test
+	public void test123456789() {
+
+		
+
+		IntToEng ite = new IntToEng();
+
+		String expected ="one hundred twenty three million four hundred fifty six thousand seven hundred eighty nine";
+
+		String actual = ite.translateEng(123456789);
+
+		assertThat(actual,is(expected));
+
+		}
+	
 }
