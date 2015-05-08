@@ -184,16 +184,18 @@ public class IntToEngTest {
 		assertThat(actual,is(expected));
 
 		}
+	
+	
 	@Test
-	public void test9000() {
+	public void test23456() {
 
 		
 
 		IntToEng ite = new IntToEng();
 
-		String expected ="nine thousand";
+		String expected ="twenty three thousand four hundred fifty six";
 
-		String actual = ite.translateEng(9000);
+		String actual = ite.translateEng(23456);
 
 		assertThat(actual,is(expected));
 
