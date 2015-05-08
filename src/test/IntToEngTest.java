@@ -125,6 +125,8 @@ public class IntToEngTest {
 	assertThat(actual,is(expected));
 
 	}
+	
+	@Test
 	public void test100() {
 
 		
@@ -138,6 +140,8 @@ public class IntToEngTest {
 		assertThat(actual,is(expected));
 
 		}
+	
+	@Test
 	public void test234() {
 
 		
@@ -147,6 +151,49 @@ public class IntToEngTest {
 		String expected ="two hundred thirty four";
 
 		String actual = ite.translateEng(234);
+
+		assertThat(actual,is(expected));
+
+		}
+	
+	@Test
+	public void test2340() {
+
+		
+
+		IntToEng ite = new IntToEng();
+
+		String expected ="two thousand three hundred forty";
+
+		String actual = ite.translateEng(2340);
+
+		assertThat(actual,is(expected));
+
+		}
+	@Test
+	public void test5678() {
+
+		
+
+		IntToEng ite = new IntToEng();
+
+		String expected ="five thousand six hundred  seventy eight";
+
+		String actual = ite.translateEng(5678);
+
+		assertThat(actual,is(expected));
+
+		}
+	@Test
+	public void test9000() {
+
+		
+
+		IntToEng ite = new IntToEng();
+
+		String expected ="nine thousand";
+
+		String actual = ite.translateEng(9000);
 
 		assertThat(actual,is(expected));
 
